@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge 36</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <h1 class="title">AGENDA RC</h1>
+    <div class="enterContacs">
+      <form action="" id="contactForm">
+        <label for="">
+          Nombre y apellido:
+          <input type="text" class="contactInputs" name="name" required>
+        </label>
+        <label for="">
+          Numero de contacto:
+          <input type="number" class="contactInputs" name="number" required> 
+        </label>
+        <button type="submit" id="enterContactBtn" class="btn">Agregar Contacto</button>
+      </form>
+    </div>
+    <div class="contacs">
+      <h2 class="titleContacts">Contactos de tu Agenda:</h2>
+      <div id="contactsContainer">
+      </div>
+    </div>
+    <button id="deleteContact" class="btn">Eliminar Contacto</button>
+    <button id="existeContacto" class="btn">Verificar si existe contacto</button>
+    <button id="agendaLlena" class="btn">Agenda Llena?</button>
+    <button id="lugaresDisponibles" class="btn">Lugares disponibles</button>
+    <button id="buscarContacto" class="btn">Buscar Contacto</button>
+  </main>
+  <script src="app.js"></script>
+  <script src="Contacs.js"></script>
+</body>
+
+</html>
